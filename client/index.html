@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- What we will be using
+======TODO:======
+#Prerequisite
+[x]-One for the statis
+[x]-Bootstrap.css
+[x]-Jquery
+
+#Front end
+[x]-Setup index.html
+[x]-Bring in Bootstrap CSS
+[x]-Create Header
+[x]-Content
+
+#Backend
+[x]-using flask route
+-->
+
+<html lang="en" dir="ltr">
+  <head>
+    <title>The Coding Club | Welcome</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fav icon throws error in console-->
+    <link rel="shortcut icon" href="#">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css"  type="text/css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Timeline css -->
+    <link rel="stylesheet" href="/css/timeline.css">
+  </head>
+
+  <body>
+    <!-- //BUG\
+      []-Animations overflow hidden is making the text dissapear on smaller screens
+      []-Pictures on the timeline
+      []-Animating the timeline
+    -->
+    <header class="v-header container">
+      <!-- Video Backdrop-->
+      <div class="fullscreen-video-wrap">
+        <video src="/media/typing.mov" autoplay="true" loop="true"></video>
+      </div>
+
+      <!-- Color overlaying the video -->
+      <div class="header-overlay"></div>
+
+      <!-- Container for headings and animations -->
+      <div class="header-content container-fluid">
+        <h1 class="display-1 text-center" id="typewriter">Welcome to the</h1>
+        <h1 class="display-1 text-center mr-4 pr-4">><span class="blink">_</span>Coding Club.</h1>
+        <a href="#" class="btn mt-4"> Learn More </a>
+      </div>
+    </header>
+
+    <!-- Section 1 -->
+    <section class="section section-1">
+      <div class="container">
+        <h1>Section 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section section-2">
+      <div class="container">
+        <h1>Section 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <!-- Timeline -->
+      <!-- //CSS Classes\\
+      (.timeline-icon): issues a circle for icons inside.
+      (.timeline-item): for timeline items
+      (.timeline-content): container like class for timeline items
+      (#timeline): id for the timeline
+      -->
+      <div id="timeline">
+      	<!-- Timeline Item, copy from here to create various boxes -->
+      	<div class="timeline-item" >
+      		<!-- Content from timeline box and position (right or left)-->
+      		<div class="timeline-content right">
+            <div class="timeline-icon"></div>
+      			<h2>2017, November</h2>
+      			<p>We started with a few members, then without any active recruitment whatsoever demanding people to join (even now). We gathered. Although it might've strated in November but nobody really knows when it started.</p>
+      			<button class="btn button1-1" >./visualize</button>
+            <button class="btn button1-2" style="display:none">./disengage</button>
+            <img id="image1" style="display:none" src="/media/honging_robo.jpg" height="250px" alt="">
+      		</div>
+      	</div>
+      </div>
+    </section>
+      <!-- //Scripts\\ -->
+      <!-- + JQuery-->
+      <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+      <!-- + Bootstrap  Core Javascrript (Includes poppers.js) -->
+      <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+      <!-- + Anime.js -->
+      <script type="text/javascript" src="/js/anime.min.js"></script>
+      <!-- + Personal Script -->
+      <script type="text/javascript" src="/js/index.js"></script>
+      <script type="text/javascript" src="/js/script.js"></script>
+      <!-- //End of Scripts\\-->
+  </body>
+</html>

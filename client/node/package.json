@@ -1,0 +1,26 @@
+{
+  "name": "npm_initialization",
+  "version": "1.0.0",
+  "description": "The coding club website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/userinfamous/coding-club-website.git"
+  },
+  "keywords": [
+    "Coding-Club",
+    "Fun",
+    "Hardcore(very)"
+  ],
+  "author": "Vuottek Un",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/userinfamous/coding-club-website/issues"
+  },
+  "homepage": "https://github.com/userinfamous/coding-club-website#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
