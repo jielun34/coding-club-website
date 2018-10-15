@@ -4,7 +4,6 @@ $(document).ready(function () {
   //Animate.js +
   //Animate Scroll JQuery +
   //JQuery +
-  fireworks.setCanvasSize();
 
   //Start at the top of the page, always
   $(window).on('beforeunload', function(){
