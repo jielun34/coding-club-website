@@ -151,14 +151,14 @@ body {
   }
   .header-content h1 {
     font-size: 10vw;
+    font-weight: 400;
   }
   .section h1 {
     font-size: 10vw;
+    font-weight: 300;
   }
-  #typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: wrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  .section p {
+    font-weight: 200;
   }
 }
 
