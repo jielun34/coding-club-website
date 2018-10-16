@@ -12,7 +12,6 @@ $(document).ready(function () {
   });
 
   //Title fade in
-  $('#typewriter').fadeIn(); //Need this to use done function
   $('#typewriter').delay(2000).promise().done(function(){
     $('#title').slideDown(500);
     $('#title').promise().done(function(){
