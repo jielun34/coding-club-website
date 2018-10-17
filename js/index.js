@@ -20,6 +20,13 @@ $(document).ready(function () {
     });
   });
 
+  //Learn more
+  $('#learn-more').click(function() {
+      $('html,body').animate({
+          scrollTop: $('.section-1').offset().top},
+          'slow');
+  });
+
   //Visualize Button 1\\
   $('.button1-1').click(function() {
     $('.button1-1').hide();
