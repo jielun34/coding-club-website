@@ -99,7 +99,8 @@ $(document).ready(function () {
     distance:'200px'
   });
   ScrollReveal().reveal('.section-people', {
-    distance:'50px'
+    distance:'50px',
+    afterReveal: revealPeople
   });
 
 //end of document
@@ -144,6 +145,16 @@ function revealTimeline(element) {
           });
         });
       });
+    });
+  });
+}
+
+function revealPeople(element) {
+  $('.section-people h1').animate({opacity: 1}, 800);
+  $('.section-people h1').promise().done(function(){
+    $('.section-people p').animate({opacity: 1}, 800);
+    $('.section-people p').promise().done(function(){
+      $('.section-people .container-fluid').animate({opacity: 1}, 800);
     });
   });
 }

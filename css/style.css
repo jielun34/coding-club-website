@@ -73,6 +73,7 @@ body {
 .header-content h1 {
   font-size:10vh;
   margin-bottom:0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .btn {
