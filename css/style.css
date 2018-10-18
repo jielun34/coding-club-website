@@ -11,14 +11,12 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
-.fireworks {
+video {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  widows: 100%;
-  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 100%;
 }
 
 .img-fluid {
@@ -146,6 +144,12 @@ body {
 
 /*==== End of Animate ====*/
 @media(max-width:960px) {
+  body {
+    font-family: 'Quicksand', Tahoma, Verdana, sans-serif;
+  }
+  #learn-more {
+    font-size: 15px;
+  }
   .header-container {
     padding-right: 3rem;
     padding-left: 3rem;
@@ -159,7 +163,11 @@ body {
     font-weight: 300;
   }
   .section p {
-    font-weight: 200;
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  .timeline-item h2 {
+    font-size: 6vw;
   }
 }
 

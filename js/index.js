@@ -1,24 +1,18 @@
-//JQuery
-
 $(document).ready(function () {
   //Animate.js +
   //Animate Scroll JQuery +
   //JQuery +
 
-
-  //Start at the top of the page, always
-  $(window).on('beforeunload', function(){
-      $(window).scrollTop(0);
-  });
-
-  //Title fade in
-  $('#typewriter').delay(2000).promise().done(function(){
-    $('#title').slideDown(500);
-    $('#title').promise().done(function(){
-      $('#learn-more').animate({opacity: 1}, 1000);
-      $('body').css('overflowY', 'auto');
+  window.onload = function() {
+    //Title fade in
+    $('#typewriter').delay(2000).promise().done(function(){
+      $('#title').slideDown(500);
+      $('#title').promise().done(function(){
+        $('#learn-more').animate({opacity: 1}, 1000);
+        $('body').css('overflowY', 'auto');
+      });
     });
-  });
+  }
 
   //Learn more
   $('#learn-more').click(function() {
