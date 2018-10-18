@@ -6,6 +6,7 @@ $(document).ready(function () {
   $( "video" ).load( "media/typing.mov", function() {
     //Title fade in
     $('video').promise().done(function(){
+      $('#typewriter').show();
       $('#typewriter').delay(2000).promise().done(function(){
         $('#title').slideDown(500);
         $('#title').promise().done(function(){
