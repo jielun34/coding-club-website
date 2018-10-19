@@ -3,17 +3,13 @@ $(document).ready(function () {
   //Animate Scroll JQuery +
   //JQuery +
 
-  window.onload = function() {
-    //Title fade in
-    $('#typewriter').show();
-    $('#typewriter').delay(2000).promise().done(function(){
-      $('#title').slideDown(500);
-      $('#title').promise().done(function(){
-        $('#learn-more').animate({opacity: 1}, 1000);
-        $('body').css('overflowY', 'auto');
-      });
+  $('#typewriter').delay(2000).promise().done(function(){
+    $('#title').slideDown(500);
+    $('#title').promise().done(function(){
+      $('#learn-more').animate({opacity: 1}, 1000);
+      $('body').css('overflowY', 'auto');
     });
-  }
+  });
 
   //Learn more
   $('#learn-more').click(function() {
