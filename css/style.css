@@ -153,8 +153,9 @@ video {
     font-family: 'Quicksand', Tahoma, Verdana, sans-serif;
   }
   #learn-more,#github {
-    width: 140px;
-    font-size: 15px;
+    width: 120px;
+    height: 50px;
+    font-size: 12px;
   }
   .header-container {
     padding-right: 3rem;

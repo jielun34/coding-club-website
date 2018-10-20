@@ -2,19 +2,16 @@ $(document).ready(function () {
   //Animate.js +
   //Animate Scroll JQuery +
   //JQuery +
-
-  window.onload = function() {
-    $('#typewriter').delay(2000).promise().done(function(){
-      $('#title').slideDown(500);
-      $('#title').promise().done(function(){
-        $('#learn-more').animate({opacity: 1}, 1000);
-        $('#learn-more').promise().done(function(){
-          $('#github').animate({opacity: 1}, 1000);
-          $('body').css('overflowY', 'auto');
-        });
+  $('#typewriter').delay(2000).promise().done(function(){
+    $('#title').slideDown(500);
+    $('#title').promise().done(function(){
+      $('#learn-more').animate({opacity: 1}, 1000);
+      $('#learn-more').promise().done(function(){
+        $('#github').animate({opacity: 1}, 1000);
+        $('body').css('overflowY', 'auto');
       });
     });
-  }
+  });
 
   //Learn more
   $('#learn-more').click(function() {
