@@ -3,10 +3,7 @@ $(document).ready(function () {
   //Animate Scroll JQuery +
   //JQuery +
 
-<<<<<<< HEAD
   window.onload = function() {
-    //Title fade in
-    $('#typewriter').show();
     $('#typewriter').delay(2000).promise().done(function(){
       $('#title').slideDown(500);
       $('#title').promise().done(function(){
@@ -16,15 +13,8 @@ $(document).ready(function () {
           $('body').css('overflowY', 'auto');
         });
       });
-=======
-  $('#typewriter').delay(2000).promise().done(function(){
-    $('#title').slideDown(500);
-    $('#title').promise().done(function(){
-      $('#learn-more').animate({opacity: 1}, 1000);
-      $('body').css('overflowY', 'auto');
->>>>>>> 7260da6c052d3147e779b8e986192109b14a9265
     });
-  });
+  }
 
   //Learn more
   $('#learn-more').click(function() {
