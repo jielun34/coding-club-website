@@ -24,6 +24,33 @@ video {
   font-size: 18px;
 }
 
+/*Typing*/
+#typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 2.5s steps(40, end)
+}
+
+#email {
+  font-family: 'Chakra Petch', sans-serif;
+}
+#email a {
+  color: white;
+}
+#email a:hover {
+  color: #5db1d8;
+}
+
+.fixed-absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 .img-fluid {
   max-height: 200px;
   border-radius: 5px;
@@ -132,15 +159,6 @@ video {
   }
 }
 
-/*Typing*/
-#typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  animation:
-    typing 2.5s steps(40, end)
-}
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -152,10 +170,13 @@ video {
   body {
     font-family: 'Quicksand', Tahoma, Verdana, sans-serif;
   }
-  #learn-more,#github {
+  #learn-more,#github{
     width: 120px;
     height: 50px;
     font-size: 12px;
+  }
+  #email {
+    font-size: 10px;
   }
   .header-container {
     padding-right: 3rem;

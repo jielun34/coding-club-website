@@ -2,13 +2,22 @@ $(document).ready(function () {
   //Animate.js +
   //Animate Scroll JQuery +
   //JQuery +
+  //Start at the top of the page, always
+  $(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+  });
+  //DO NOT DELETE THESE ABOVE CODE
+
   $('#typewriter').delay(2000).promise().done(function(){
     $('#title').slideDown(500);
     $('#title').promise().done(function(){
       $('#learn-more').animate({opacity: 1}, 1000);
       $('#learn-more').promise().done(function(){
         $('#github').animate({opacity: 1}, 1000);
-        $('body').css('overflowY', 'auto');
+        $('#github').promise().done(function(){
+          $('#email').animate({opacity: 1}, 1000);
+          $('body').css('overflowY', 'auto');
+        });
       });
     });
   });
@@ -157,4 +166,15 @@ function revealPeople(element) {
       $('.section-people .container-fluid').animate({opacity: 1}, 800);
     });
   });
+}
+
+function copy(selector){
+  var $temp = $("<div>");
+  $("body").append($temp);
+  $temp.attr("contenteditable", true)
+       .html($(selector).html()).select()
+       .on("focus", function() { document.execCommand('selectAll',false,null) })
+       .focus();
+  document.execCommand("copy");
+  $temp.remove();
 }
