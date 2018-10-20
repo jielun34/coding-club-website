@@ -19,6 +19,11 @@ video {
   min-width: 100%;
 }
 
+#learn-more,#github {
+  width: 180px;
+  font-size: 18px;
+}
+
 .img-fluid {
   max-height: 200px;
   border-radius: 5px;
@@ -147,7 +152,8 @@ video {
   body {
     font-family: 'Quicksand', Tahoma, Verdana, sans-serif;
   }
-  #learn-more {
+  #learn-more,#github {
+    width: 140px;
     font-size: 15px;
   }
   .header-container {

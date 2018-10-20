@@ -10,7 +10,10 @@ $(document).ready(function () {
       $('#title').slideDown(500);
       $('#title').promise().done(function(){
         $('#learn-more').animate({opacity: 1}, 1000);
-        $('body').css('overflowY', 'auto');
+        $('#learn-more').promise().done(function(){
+          $('#github').animate({opacity: 1}, 1000);
+          $('body').css('overflowY', 'auto');
+        });
       });
     });
   }

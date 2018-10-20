@@ -44,16 +44,24 @@
       <header class="v-header header-container">
         <!-- Video Backdrop-->
         <div class="fullscreen-video-wrap">
-          <video src="/media/typing.mov" autoplay="true" loop="true"></video>
+          <video autoplay="true" loop="true">
+            <source src="/media/typing.mov" type="video/mp4">
+            <source src="/media/typing.mp4" type="video/mov">
+          </video>
         </div>
         <!-- Color overlaying the video -->
         <div class="header-overlay"></div>
 
         <!-- Container for headings and animations -->
         <div class="header-content container">
-          <h1 class="display-1" id="typewriter" style="display:none;">Welcome to the</h1>
-          <h1 class="display-1 mr-4 pr-4 text-nowrap" id="title" style="display:none;">><span class="blink">_</span>Coding Club.</h1>
-          <button class="btn mt-4" id="learn-more" style="opacity:0;"> Learn More </button>
+            <h1 class="display-1" id="typewriter" style="display:none;">Welcome to the</h1>
+            <h1 class="display-1 mr-4 pr-4 text-nowrap" id="title" style="display:none;">><span class="blink">_</span>Coding Club.</h1>
+          <div class="row">
+            <div class="col-sm-12"><button class="btn mt-4" id="learn-more" style="opacity:0;"> Learn More </button></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12"><button class="btn mt-4" id="github" style="opacity:0;"> GitHub </button></div>
+          </div>
         </div>
       </header>
 
@@ -190,27 +198,16 @@
       <section class="section section-people">
         <div class="header-container">
           <h1 class="display-3" style="opacity: 0;">People Involved</h1>
-          <p class="lead" style="opacity: 0;">Wonderful contributions and things have happened thanks to them.</p>
+          <p class="lead" style="opacity: 0;">Wonderful contributions and things have happened thanks to them. If you want to be on be shown here, just make push requests onto our GitHub repositories and wait for it to be accepted.</p>
 
           <!-- Container for profile -->
           <div class="container-fluid" style="opacity:0;">
             <div class="row">
-              <div class="col-sm-3 mt-4">
+              <div class="col-sm-6 mt-4">
                 <img class="rounded-circle" src="/media/contributors/p-1.jpg" alt="contributor-1" width="140" height="140">
               </div>
-              <div class="col-sm-3 mt-4">
+              <div class="col-sm-6 mt-4">
                 <img class="rounded-circle" src="/media/contributors/p-2.jpg" alt="contributor-2" width="140" height="140">
-              </div>
-              <div class="col-sm-3 mt-4">
-                <img class="rounded-circle" src="/media/contributors/p-3.jpg" alt="contributor-3" width="140" height="140">
-              </div>
-              <div class="col-sm-3 mt-4">
-                <img class="rounded-circle" src="/media/contributors/p-4.jpg" alt="contributor-4" width="140" height="140">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-3 mt-4">
-                <img class="rounded-circle" src="/media/contributors/p-5.jpg" alt="contributor-5" width="140" height="140">
               </div>
             </div>
           </div>
