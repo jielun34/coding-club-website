@@ -1,2 +1,12 @@
-# coding-club-website
-Welcome to the Coding Club's Website. Feel free to fork, push requests and contribute.
+## Website:
+### Homepage
+* ~~Backdrop~~
+* ~~Slick Design (Fade in)~~
+* ~~Timeline~~
+* ~~Contributors~~
+* ~~Finishing Touches~~
+* ~~Buttons and links, email~~
+* ~~Responsiveness~~
+***
+## Please read carefully before contributing.
+
